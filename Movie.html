@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <a href="#" class="brand"><img src="image/little.png" alt="brand" /></a>
+            <a href="index.html" class="header_text">Главная</a>
+            <a href="Category.html" class="header_text">Каталог</a>
+            <a href="#" class="header_text">Магазин</a>
+            <a href="#" class="header_text">Спорт</a>
+            <a href="Favourites.html" class="header_text">Избранное</a>
+            <a href="#" class="header_text">Рекомендации</a>
+            <input type="text" placeholder="Поиск фильма...">
+            <button><img src="image/search.png"></button>
+          </div>
+        </header>
+      <main class="site-main">
+        <div>
+          <div class="right_pos">
+              <h2 style="color: white;">Новости</h2>
+              <p style="border: 2px;border-color: white; border-style: solid;"><a href="https://mail.pluggedin.ru/open/itogovye-sbory-filyma-kapitan-marvel-2-budut-katastrofoy-dlya-Marvel-47465">
+                  <img src="image/facepalm.png">
+                  Провал Marvel? Сборы Капитан Марвел 2 повергли зрителей в шок...</a></p>
+              <p style="border: 2px;border-color: white; border-style: solid;"><a href="https://www.kinoafisha.info/news/kinovselennaya-marvel-vnov-razocharovyvaet-poyavilis-otzyvy-o-kapitane-marvel-2/">
+                  <img src="image/1.png"/>
+                    Это дно? Отзывы критиков о фильме оставляют желать лучшего</a></p>
+          </div>
+        <h1 style="color: white; font-size: 40px;">О фильме</h1>
+        <h1 style="color: white; align-items: left;"><p>Капитан марвел 2</p></h1>
+        <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="640"
+              height="320"
+              poster="image/kap_poster.png"
+              data-setup="{}"
+          >
+      <source src="movie/Kapitan_Marvel_2_2023_320.mp4" type="video/mp4" />
+      <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+      <h2 style="color: white; align-items: left;">Описание:</h2>
+      <p style="color: white; width: 70%;">Кэрол Дэнверс обретает свою отнятую тиранами Крии личность и мстит Высшему Разуму. 
+      Это приводят к тому, что Кэрол взваливает на свои плечи бремя дестабилизированной Вселенной. 
+      Когда она проходит через червоточину, которая должна вывести её на революционера из числа Крии, её силы переплетаются со способностями Камалы Хан, 
+      известной как Мисс Марвел, а также с племянницей Моникой Рамбо. Девушкам придётся научиться работать в команде, чтобы спасти Вселенную</p>
+      <h2 style="color: white;">Актеры</h2>
+      <ul>
+          <li><a>Бри Ларсон<div><img src="akter/bri.jpg"/></div></a></li>
+          <li>Тейона Паррис</li>
+          <li>Иман Велани</li>
+          <li>Семьюель Л. Джексон</li>
+      </ul>
+    </div>
+    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+    </main>
+  </body>
+</html>

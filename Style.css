@@ -27,7 +27,9 @@ body {
     color: #333;
     text-decoration: none;
   }
-  
+  li{
+    color:white;
+  }
   main {
     padding: 20px;
   }
@@ -43,10 +45,19 @@ body {
     color:black;
   }
   .header_text{
-    display: flex;
+    display: inline;
     color: white;
     padding: 10px;
     justify-content: space-between;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .fav_text{
+    display: inline;
+    color: white;
+    padding: 50px;
+    justify-content: space-between;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
   }
   .site-main{
     background-color: black;
@@ -55,10 +66,27 @@ body {
     display:flex; 
     justify-content:space-between;
   }
+  a{
+    text-decoration: none;
+  }
+  a>div {
+     display: none; 
+  }
+
+  a:hover>div { 
+  display: block;
+  }
+
   a:visited{
     color: white;
   }
   img{
     margin: 20px;
     justify-content: space-between;
+  }
+  .right_pos{
+    float: right;
+    width: 300px;
+    height: 100px;
+    text-align: center;
   }
