@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+          <a href="#" class="brand"><img src="image/little.png" alt="brand" /></a>
+          <a href="index.html" class="header_text">Главная</a>
+          <a href="Category.html" class="header_text">Каталог</a>
+          <a href="#" class="header_text">Избранное</a>
+          <a href="#" class="header_text">Рекомендации</a>
+          <a href="#" class="header_text">Новости</a>
+          <a href="Shop.html" class="header_text"><u>Магазин</u></a>
+          <input type="text" placeholder="Поиск фильма...">
+          <input type="image" src="/image/search.png" alt="Кнопка «input»">
+        </div>
+      </header>
+    <main class="site-main">
+      <h1 style="color: white;">Подписки</h1>
+      <div>
+        <a href="#openModal"><img src="image/podpiska1.jpg"></a>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Выберите способ оплаты</h3>
+                  <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                  Подписка БАЗОВАЯ
+                  <div>Стоимость
+                  <div class="right_pos">199р/мес</div>
+                  </div>
+                  <div>
+                    <button> Карта МИР</button>
+                    <button> SberPay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <img src="image/podpiska2.jpg"/>
+        </div>
+     <h1 style="color: white;">Боевики</h1>
+     <img src="image/shopbuy1.jpg">
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+          console.log(scrollbar);
+          document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+            document.body.style.overflow = 'hidden';
+            document.querySelector('#openModal').style.marginLeft = scrollbar;
+          });
+          document.querySelector('[href="#close"]').addEventListener('click', function () {
+            document.body.style.overflow = 'visible';
+            document.querySelector('#openModal').style.marginLeft = '0px';
+          });
+        });
+      </script>
+  </body>
+</html>
